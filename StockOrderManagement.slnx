@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/screenshots/">
+    <File Path="screenshots/Ürün-Giriş-Formu.jpeg" />
+    <File Path="screenshots/Ürün-Güncelleme-Formu.jpeg" />
+  </Folder>
+  <Project Path="StockOrderManagement.BusinessLayer/StockOrderManagement.BusinessLayer.csproj" Id="405fe94f-6bb9-43cd-a118-91f1ccd701e1" />
+  <Project Path="StockOrderManagement.DataLayer/StockOrderManagement.DataLayer.csproj" Id="46eff84c-2808-403e-a859-f1f5d24c1cb5" />
+  <Project Path="StockOrderManagement.TypeLayer/StockOrderManagement.TypeLayer.csproj" Id="ed19460d-96d2-4f6a-b9a0-dafc0c446339" />
+  <Project Path="StockOrderManagement.UI/StockOrderManagement.UI.csproj" Id="3c244ecf-b82c-4348-859c-e3e0a0292d03" />
+</Solution>

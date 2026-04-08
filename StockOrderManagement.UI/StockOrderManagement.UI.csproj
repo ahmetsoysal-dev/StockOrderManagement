@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C244ECF-B82C-4348-859C-E3E0A0292D03}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>StockOrderManagement.UI</RootNamespace>
+    <AssemblyName>StockOrderManagement.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Category\FrmCategoryCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Category\FrmCategoryCreate.Designer.cs">
+      <DependentUpon>FrmCategoryCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Category\FrmCategoryRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Category\FrmCategoryRUD.Designer.cs">
+      <DependentUpon>FrmCategoryRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Employee\FrmEmployeeCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Employee\FrmEmployeeCreate.Designer.cs">
+      <DependentUpon>FrmEmployeeCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Employee\FrmEmployeeRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Employee\FrmEmployeeRUD.Designer.cs">
+      <DependentUpon>FrmEmployeeRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMenus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMenus.Designer.cs">
+      <DependentUpon>FrmMenus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Order\FrmOrderCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Order\FrmOrderCreate.Designer.cs">
+      <DependentUpon>FrmOrderCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Order\FrmOrderRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Order\FrmOrderRUD.Designer.cs">
+      <DependentUpon>FrmOrderRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Product\FrmProductCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Product\FrmProductCreate.Designer.cs">
+      <DependentUpon>FrmProductCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Product\FrmProductDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Product\FrmProductDetails.Designer.cs">
+      <DependentUpon>FrmProductDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Product\FrmProductRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Product\FrmProductRUD.Designer.cs">
+      <DependentUpon>FrmProductRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Supplier\FrmSupplierCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Supplier\FrmSupplierCreate.Designer.cs">
+      <DependentUpon>FrmSupplierCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Supplier\FrmSupplierRUD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Supplier\FrmSupplierRUD.Designer.cs">
+      <DependentUpon>FrmSupplierRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Category\FrmCategoryCreate.resx">
+      <DependentUpon>FrmCategoryCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Category\FrmCategoryRUD.resx">
+      <DependentUpon>FrmCategoryRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Employee\FrmEmployeeCreate.resx">
+      <DependentUpon>FrmEmployeeCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Employee\FrmEmployeeRUD.resx">
+      <DependentUpon>FrmEmployeeRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMenus.resx">
+      <DependentUpon>FrmMenus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Order\FrmOrderCreate.resx">
+      <DependentUpon>FrmOrderCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Order\FrmOrderRUD.resx">
+      <DependentUpon>FrmOrderRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Product\FrmProductCreate.resx">
+      <DependentUpon>FrmProductCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Product\FrmProductDetails.resx">
+      <DependentUpon>FrmProductDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Product\FrmProductRUD.resx">
+      <DependentUpon>FrmProductRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Supplier\FrmSupplierCreate.resx">
+      <DependentUpon>FrmSupplierCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Supplier\FrmSupplierRUD.resx">
+      <DependentUpon>FrmSupplierRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StockOrderManagement.BusinessLayer\StockOrderManagement.BusinessLayer.csproj">
+      <Project>{405fe94f-6bb9-43cd-a118-91f1ccd701e1}</Project>
+      <Name>StockOrderManagement.BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StockOrderManagement.TypeLayer\StockOrderManagement.TypeLayer.csproj">
+      <Project>{ed19460d-96d2-4f6a-b9a0-dafc0c446339}</Project>
+      <Name>StockOrderManagement.TypeLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
