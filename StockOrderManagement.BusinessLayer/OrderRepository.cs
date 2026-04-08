@@ -20,7 +20,7 @@ namespace StockOrderManagement.BusinessLayer
             {
                 SqlConnection sqlConnection = Connection.Connect;
 
-                SqlCommand sqlCommand = new SqlCommand("insert into İakademi46_Orders values (@EmployeeID,@ProductID,@Quantity)", sqlConnection);
+                SqlCommand sqlCommand = new SqlCommand("insert into Orderss values (@EmployeeID,@ProductID,@Quantity)", sqlConnection);
                 sqlCommand.Parameters.AddWithValue("@EmployeeID", EmployeeID);
                 sqlCommand.Parameters.AddWithValue("@ProductID", ProductID);
                 sqlCommand.Parameters.AddWithValue("@Quantity", Quantity);
