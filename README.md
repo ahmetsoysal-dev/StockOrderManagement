@@ -47,7 +47,7 @@ kolayca uyarlanabilecek şekilde geliştirilmiştir.
 Aşağıda StockOrderManagement uygulamasının bazı ekran görüntüleri bulunmaktadır:
 
 ##Ürün Giriş Formu
-(Ürün-Giriş-Formu)
+(Ürün-Giriş-Formu.jpeg)
 
 ##Ürün Güncelleme-Silme Formu
-(Ürün-Güncelleme-Formu)
+(Ürün-Güncelleme-Formu.jpeg)
